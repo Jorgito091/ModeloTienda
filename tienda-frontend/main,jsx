@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css'; // importa estilos con Tailwind
+import Login from './auth/Login'; // importa tu componente de login
+
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <Login />
+    </React.StrictMode>
+  );
+}
