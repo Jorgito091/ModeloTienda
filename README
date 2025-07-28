@@ -1,0 +1,72 @@
+# 🛍️ Modelo de tienda
+Es una aplicación web completa de comercio electrónico full-stack construida con **React** (frontend) y **Laravel** (backend). Soporta roles de usuario y administrador, navegación de productos, carrito de compras, y control total del administrador sobre pedidos, productos y usuarios.
+---
+## 📂 Estructura del Proyecto
+ModeloTienda/
+├── tienda-frontend/      # Frontend en React (interfaz cliente y admin)
+└── tienda/               # Backend en Laravel (API, base de datos, autenticación)
+---
+## ✨ Características
+### 👤 Usuario (Cliente)
+- 🛒 Navegar catálogo de productos
+- 🔍 Filtrar y buscar productos
+- ➕ Añadir productos al carrito de compras
+- 🧾 Realizar pedidos
+- 🔐 Registro e inicio de sesión como usuario regular
+### 🛠 Administrador
+- ✅ Inicio de sesión con credenciales de administrador
+- 📦 Crear, actualizar y eliminar productos
+- 👥 Ver y gestionar usuarios
+- 📑 Revisar y gestionar pedidos
+---
+## ⚙️ Tecnologías Utilizadas
+### 🖥️ Frontend (`tienda-frontend`)
+- React
+- Tailwind CSS
+- React Router
+- Axios para comunicación con la API
+### 🗄️ Backend (`tienda`)
+- Laravel 10
+- Base de datos SQLite o MySQL
+- Endpoints RESTful API
+- Laravel Sanctum (opcional para autenticación)
+---
+## 🚀 Instalación
+### 🔧 Backend (Laravel)
+1. Entra a la carpeta del backend: `cd tienda`
+2. Instala las dependencias de PHP con Composer: `composer install`
+3. Copia el archivo de configuración `.env` y genera la clave de la aplicación: `cp .env.example .env` y `php artisan key:generate`
+4. Configura la base de datos en `.env` (ejemplo SQLite): `DB_CONNECTION=sqlite` y `DB_DATABASE=/ruta/completa/a/tu/database.sqlite`
+5. Ejecuta las migraciones: `php artisan migrate`
+6. Inicia el servidor backend: `php -S localhost:8000 -t public`
+### 💻 Frontend (React)
+1. Entra a la carpeta del frontend: `cd tienda-frontend`
+2. Instala dependencias con npm: `npm install`
+3. Inicia el servidor de desarrollo: `npm run dev`
+4. Configura las llamadas API a la URL backend, por ejemplo: `http://localhost:8000/api`
+---
+## 🔐 Roles de Usuario
+- **Administrador**: Acceso a panel completo (pedidos, productos, usuarios)
+- **Usuario Regular**: Navega productos, usa filtros, añade al carrito y realiza pedidos
+---
+## 🧠 Resumen del Proyecto
+Interfaz limpia, moderna y responsiva. Backend robusto con autenticación y autorización. Renderizado dinámico según roles. Persistencia de datos para carrito y pedidos. Código organizado para mantenimiento y escalabilidad.
+---
+## 📸 Capturas de Pantalla
+_Agrega imágenes del frontend para usuario y administrador aquí._
+---
+## 🛣️ Mejoras Futuras
+- Subida de imágenes para productos
+- Integración con Stripe o PayPal
+- Sistema de reseñas y calificaciones
+- Panel de estadísticas para administradores
+- Confirmaciones y notificaciones por email
+---
+## 🤝 Contribuciones
+Forkea el repositorio, mejora funciones y envía pull requests. ¡Todas las contribuciones son bienvenidas!
+---
+## 📄 Licencia
+Proyecto bajo licencia MIT.
+---
+## 📬 Contacto
+Desarrollado por Jorge Eduardo Torres Ochoa. GitHub: [@Jorgito091](https://github.com/Jorgito091)
